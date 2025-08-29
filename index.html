@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my first website
+        </title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+    </head>
+     <body>
+        <body style="background-color: rgb(110, 78, 40)"> 
+                <h1>My First Heading</h1>
+                <p>My first paragraph.</p>
+                <div class="row">
+            <img id="icon1" src="img/home.png"  onclick="this.src='img/homealt.png';" ondblclick="src='img/home.png';" onmouseover="src='img/homeover.png';"  onmouseout="src='img/home.png';" width="150"/>
+            <img id="icon2" src="img/roof.png"  onclick="this.src='img/roofalt.png';" ondblclick="src='img/roof.png';" onmouseover="src='img/roofover.png';" onmouseout="src='img/roof.png';" width="150"/>
+            
+            <img id="icon3" src="img/window.png" onclick="this.src='img/windowalt.png';" ondblclick="src='img/window.png';" onmouseover="src='img/windowover.png';" onmouseout="src='img/window.png';" width="150"/>
+            </div>
+            <div class="row">
+            <img id="icon4" src="img/plantpng.png" onclick="this.src='img/plantalt.png';" ondblclick="src='img/plantpng.png';" onmouseover="src='img/plantover.png';" onmouseout="src='img/plantpng.png';" width="150"/>
+            <img id="icon5" src="img/door.png"  onclick="this.src='img/dooralt.png';" ondblclick="src='img/door.png';" onmouseover="src='img/doorover.png';" onmouseout="src='img/door.png';" width="150"/>
+            <img id="icon6" src="img/fence.png" onclick="this.src='img/fencealt.png';" ondblclick="src='img/fence.png';" onmouseover="src='img/fenceover.png';" onmouseout="src='img/fence.png';" width="150"/>
+        </div>
+        <div class="row">
+            <img id="icon7" src="img/indoor.png" onclick="this.src='img/indooralt.png';" ondblclick="src='img/indoor.png';" onmouseover="src='img/indoorover.png';" onmouseout="src='img/indoor.png';" width="150"/>
+            <img id="icon8" src="img/paint.png" onclick="this.src='img/paintalt.png';" ondblclick="src='img/paint.png';" onmouseover="src='img/paintover.png';" onmouseout="src='img/paint.png';" width= "150"/>
+            <img id="icon9" src="img/music.png" onclick="this.src='img/musicalt.png';" ondblclick="src='img/music.png';" onmouseover="src='img/musicover.png';" onmouseout="src='img/music.png';" width="150"/>
+        </div>
+
+        
+
+
+
+
+        <script>
+            var sound1 = new buzz.sound("sound/ring.mp3");
+            var sound2 = new buzz.sound("sound/window.mp3");
+            var sound3 = new buzz.sound("sound/door.mp3");
+            var sound4 = new buzz.sound("sound/sliding.mp3");
+            var sound5 = new buzz.sound("sound/pop.mp3");
+            var sound6 = new buzz.sound("sound/indoor.mp3");
+
+
+           window.onload = function() {
+               document.getElementById('icon1').addEventListener('click', function () {sound3.play(); });
+               document.getElementById('icon3').addEventListener('click', function () {sound4.play(); });
+               document.getElementById('icon4').addEventListener('click', function () {sound1.play(); });
+               document.getElementById('icon5').addEventListener('click', function () {sound2.play(); });
+               document.getElementById('icon2').addEventListener('click', function () {sound5.play(); });
+               document.getElementById('icon7').addEventListener('click', function () {sound6.play(); });
+
+
+         }
+          </script>
+
+    </body>
+
+
+</html>
+ 
+
+
+
+
+    
+
+   
+
