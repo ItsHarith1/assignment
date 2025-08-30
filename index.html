@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    img {
+        transition: transform 0.2s ease; 
+        cursor: pointer; 
+    }
+
+    img:hover {
+        transform: scale(1.1); 
+    }
+</style>
+<style>
+    img {
+        transition: transform 0.2s ease;
+        cursor: pointer;
+        margin: 20px; 
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+
+    .row {
+        text-align: center; 
+    }
+</style>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+    </head>
+     <body>
+        <body style="background-color: rgb(110, 78, 40)"> 
+
+                <div class="row">
+            <img id="icon1" src="img/home.png"  onclick="this.src='img/homealt.png';" ondblclick="src='img/home.png';" onmouseover="src='img/homeover.png';"  onmouseout="src='img/home.png';" height="200" width="200"/>
+            <img id="icon2" src="img/roof.png"  onclick="this.src='img/roofalt.png';" ondblclick="src='img/roof.png';" onmouseover="src='img/roofover.png';" onmouseout="src='img/roof.png';"  height="200" width="200"/>
+            
+            <img id="icon3" src="img/window.png" onclick="this.src='img/windowalt.png';" ondblclick="src='img/window.png';" onmouseover="src='img/windowover.png';" onmouseout="src='img/window.png';" height="200" width="200"/>
+            </div>
+            <div class="row">
+            <img id="icon4" src="img/plantpng.png" onclick="this.src='img/plantalt.png';" ondblclick="src='img/plantpng.png';" onmouseover="src='img/plantover.png';" onmouseout="src='img/plantpng.png';" height="200" width="200"/>
+            <img id="icon5" src="img/door.png"  onclick="this.src='img/dooralt.png';" ondblclick="src='img/door.png';" onmouseover="src='img/doorover.png';" onmouseout="src='img/door.png';" height="200" width="200"/>
+            <img id="icon6" src="img/fence.png" onclick="this.src='img/fencealt.png';" ondblclick="src='img/fence.png';" onmouseover="src='img/fenceover.png';" onmouseout="src='img/fence.png';" height="200" width="200"/>
+        </div>
+        <div class="row">
+            <img id="icon7" src="img/indoor.png" onclick="this.src='img/indooralt.png';" ondblclick="src='img/indoor.png';" onmouseover="src='img/indoorover.png';" onmouseout="src='img/indoor.png';" height="200" width="200"/>
+            <img id="icon8" src="img/paint.png" onclick="this.src='img/paintalt.png';" ondblclick="src='img/paint.png';" onmouseover="src='img/paintover.png';" onmouseout="src='img/paint.png';" height="200" width= "200"/>
+            <img id="icon9" src="img/music.png" onclick="this.src='img/musicalt.png';" ondblclick="src='img/music.png';" onmouseover="src='img/musicover.png';" onmouseout="src='img/music.png';" height="200" width="200"/>
+        </div>
+
+        
+
+
+
+
+        <script>
+            var sound2 = new buzz.sound("sound/window.mp3");
+            var sound3 = new buzz.sound("sound/door.mp3");
+            var sound4 = new buzz.sound("sound/sliding.mp3");
+            var sound5 = new buzz.sound("sound/pop.mp3");
+            var sound6 = new buzz.sound("sound/indoor.mp3");
+            var sound7 = new buzz.sound("sound/wood.mp3");
+            var sound8 = new buzz.sound("sound/roller.mp3");
+            var sound9 = new buzz.sound("sound/leaves.mp3");
+            var sound10 = new buzz.sound("sound/music.mp3");
+
+
+           window.onload = function() {
+               document.getElementById('icon1').addEventListener('click', function () {sound3.play(); });
+               document.getElementById('icon3').addEventListener('click', function () {sound4.play(); });
+               document.getElementById('icon5').addEventListener('click', function () {sound2.play(); });
+               document.getElementById('icon2').addEventListener('click', function () {sound5.play(); });
+               document.getElementById('icon7').addEventListener('click', function () {sound6.play(); });
+               document.getElementById('icon4').addEventListener('click', function () {sound9.play(); });
+               document.getElementById('icon6').addEventListener('click', function () {sound7.play(); });
+               document.getElementById('icon8').addEventListener('click', function () {sound8.play(); });
+               document.getElementById('icon9').addEventListener('click', function () {sound10.play(); });
+
+
+
+         }
+          </script>
+
+    </body>
+
+
+</html>
+ 
+
+
+
+
+    
+
+   
+
